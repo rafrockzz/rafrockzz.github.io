@@ -51,6 +51,7 @@ ul{
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
+    transition: height .5s ease-in-out;
 }
 
 .nav .nav-menu{
@@ -62,6 +63,7 @@ ul{
     top: 0%;
     width:90%;
     cursor: pointer;
+    display: none;
 }
 
 .nav .toggle-collapse .toggle-icons{
@@ -73,6 +75,11 @@ ul{
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
+
 }
 
 .nav .nav-items{
@@ -122,6 +129,9 @@ ul{
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
     }
 }
 
