@@ -12,7 +12,7 @@ $(document).ready(function (){
     $(".owl-carousel").owlCarousel({
         loop: true,
         autoplay: true,
-        autopplayTimeout: 3000,
+        autoplayTimeout: 2000,
         dots: false,
         nav: true,
     });
